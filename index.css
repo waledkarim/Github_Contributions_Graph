@@ -1,0 +1,47 @@
+html, body, ul {
+    margin: 0;
+    padding: 0;
+    background-color: #0d1116;
+}
+
+:root {
+    --graph-bg: #000;
+    --default-square-bg: #161b22;
+    --level3: darkblue;
+    --level5: blue;
+    --level10: lightskyblue;
+}
+
+.graph-container {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph {
+    display: flex;
+}
+
+.square {
+    flex-grow: 1;
+    list-style: none;
+    height: 20px;
+    width: 20px;
+    margin: .15em;
+    border-radius: .30em;
+    background-color: var(--default-square-bg)
+}
+
+[data-value = "3"] {
+    background-color: var(--level3);
+}
+
+[data-value = "5"] {
+    background-color: var(--level5);
+}
+
+[data-value = "10"] {
+    background-color: var(--level10);
+}
